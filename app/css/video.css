@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Alice&family=Montserrat:wght@400;700&display=swap');
+
+.video-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 30px;
+    gap: 10px;
+  }
+
+.video-title{
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;;
+    color: black;
+  }
+
+iframe{
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+  }
+
+  
+
+  .related-h2{
+    color: #313618;
+    font-family: "Roboto", Sans-Serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+  @media only screen and (max-width: 600px) {
+
+    .video-container{
+        display: block;
+    }
+
+    .video-title{
+        font-size: 18px;
+    }
+
+    iframe{
+        height: 240px;
+    }
+
+  }

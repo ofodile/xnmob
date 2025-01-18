@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Alice&family=Montserrat:wght@400;700&display=swap');
+
+.related-h2{
+    color: #313618;
+    font-family: "Roboto", Sans-Serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}

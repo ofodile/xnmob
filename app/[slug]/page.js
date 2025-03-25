@@ -39,6 +39,7 @@ export default async function Video({ params }) {
       </div>
 
       <div className="section-two">Ad Section</div>
+      <div className="section-two">Ad Section</div>
     </div>
   );
 }

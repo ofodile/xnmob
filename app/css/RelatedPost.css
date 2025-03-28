@@ -1,9 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Alice&family=Montserrat:wght@400;700&display=swap');
 
+
+.related-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
 .related-h2{
+  margin-top: 30px;
+}
+
+ related-thumnail{
+   width: 100%;
+ }
+
+.related-title{
     color: #313618;
     font-family: "Roboto", Sans-Serif;
-    margin-top: 30px;
+    margin-top: 5px;
     margin-bottom: 10px;
     font-weight: bold;
+    font-size: 15px;
+}
+
+.related-img-container {
+    position: relative;
+    text-align: center;
+  }
+
+  .related-video-time{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    color: white;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3px;
+    border-radius: 2px;
+    font-weight: bold;
+  }
+
+
+@media only screen and (max-width: 600px) {
+  
+  .related-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .related-title{
+    font-size: 12px;
+  }
+  
+  
 }

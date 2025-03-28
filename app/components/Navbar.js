@@ -54,7 +54,7 @@ const Navbar = () => {
           </button>
 
           <a href="/" className="flex items-center space-x-1 rtl:space-x-reverse">
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-white dark:text-white font-montserrat">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap text-white dark:text-white font-montserrat font-bold">
               Xnmob
             </span>
           </a>

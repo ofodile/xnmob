@@ -1,11 +1,13 @@
 import "../css/video.css";
 import Link from "next/link";
-
+import RelatedPost from "../components/RelatedPost"
 async function fetchVideoData(id) {
   const url = `https://www.eporner.com/api/v2/video/id/?id=${id}&thumbsize=medium&format=json`;
+
   try {
     const res = await fetch(url);
     if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
+    
     return await res.json();
   } catch (error) {
     console.error("Error fetching video data:", error);
@@ -34,11 +36,10 @@ export default async function Video({ params }) {
         ) : (
           <p>Video not available.</p>
         )}
-
         
+        <RelatedPost />
       </div>
 
-      <div className="section-two">Ad Section</div>
       <div className="section-two">Ad Section</div>
     </div>
   );

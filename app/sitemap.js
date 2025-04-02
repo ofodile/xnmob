@@ -1,7 +1,7 @@
 export const revalidate = 30;
 
 export default async function sitemap() {
-  const baseUrl = "https://www.xnmob.vercel.app"; // Update with your domain
+  const baseUrl = "https://bangfab.vercel.app"; // Update with your domain
   const apiUrl =
     "https://www.eporner.com/api/v2/video/search/?query=All&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json";
 

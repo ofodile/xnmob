@@ -1,5 +1,7 @@
 import Link from "next/link";
 import "./css/category.css";
+import Adcode1 from './components/Adcode1'
+import AdLarge from './components/Adcode2'
 
 export default async function Home({ searchParams }) {
   const url =

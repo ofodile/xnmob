@@ -4,8 +4,6 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    overflow: auto;
   }
   
   .container{
@@ -26,7 +24,7 @@ html, body {
   }
 
   .title{
-    font-family: "Montserrat", Arial, Helvetica, Sans-Serif;
+    font-family: "Roboto", Arial, Helvetica, Sans-Serif;
     text-align: left;
     margin: 10px;
     margin-left: 0;
@@ -36,6 +34,14 @@ html, body {
     padding-top: 10px;
     color: #0b1215; 
     box-sizing: border-box;
+  }
+  
+  .thumbnil:active{
+    opacity: 0.8&;
+  }
+  
+  .title:active{
+    color: skyblue;
   }
 
   .img-container {
@@ -52,13 +58,14 @@ html, body {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 3px;
     border-radius: 2px;
+    font-weight: bold;
   }
   .tag {
-    font-family: "Alice", Arial, Helvetica, Sans-Serif;
+    font-family: "Montserrat", Arial, Helvetica, Sans-Serif;
     color: rgb(194, 30, 30);
-    font-size: 15px;
+    font-size: 12px;
     border-radius: 2px;
-    font-weight: 500;
+    font-weight: bold;
   }
   
   .pagination {
@@ -102,6 +109,6 @@ html, body {
     }
 
     .title{
-        font-size: 15px;
+        font-size: 16px;
     }
   }

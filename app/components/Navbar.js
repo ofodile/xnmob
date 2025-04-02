@@ -24,9 +24,9 @@ const Navbar = () => {
       alert("Please enter a search term.");
     }
   };
-
+//sticky top-0 z-20
   return (
-    <div className="sticky top-0 z-20 bg-customNav">
+    <div className="bg-customNav">
       <nav className="bg-customNav border-gray-200 z-50 shadow-md font-roboto">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           {/* Search Button */}
@@ -113,13 +113,13 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="/celebrities" className="block py-2 text-white px-3 text-gray-900 dark:text-white font-bold">
-                  Celebrities
+                <a href="/masturbation" className="block py-2 text-white px-3 text-gray-900 dark:text-white font-bold">
+                  Masturbation
                 </a>
               </li>
               <li>
-                <a href="/masturbation" className="block py-2 text-white px-3 text-gray-900 dark:text-white font-bold">
-                  Masturbation
+                <a href="/more-categories" className="block py-2 text-white px-3 text-gray-900 dark:text-white font-bold">
+                  More Categories
                 </a>
               </li>
             </ul>

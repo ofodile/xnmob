@@ -1,9 +1,9 @@
 import Link from "next/link";
-import "./css/category.css";
+import "../css/category.css";
 
-export default async function Home({ searchParams }) {
+export default async function Teen({ searchParams }) {
   const url =
-    "https://www.eporner.com/api/v2/video/search/?query=All&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json";
+    "https://www.eporner.com/api/v2/video/search/?query=teen&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json";
 
   let videos = [];
   

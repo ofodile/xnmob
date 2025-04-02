@@ -1,9 +1,13 @@
 import Link from "next/link";
-import "./css/category.css";
+import "../css/category.css";
 
-export default async function Home({ searchParams }) {
+export default async function SearchResults({ searchParams }) {
+  
+  const searchInput= await searchParams;
+  const { query } = searchInput;
+  
   const url =
-    "https://www.eporner.com/api/v2/video/search/?query=All&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json";
+    `https://www.eporner.com/api/v2/video/search/?query=${query}&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json`;
 
   let videos = [];
   
@@ -81,7 +85,7 @@ try {
 
             {/* Next Button */}
             {currentPage < totalPages && (
-              <a href={`/?page=${currentPage + 1}`} className="pagination-link">
+              <a href={`/search/?page=${currentPage + 1}`} className="pagination-link">
                 Next
               </a>
             )}

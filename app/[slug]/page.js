@@ -1,13 +1,14 @@
 import "../css/video.css";
 import Link from "next/link";
-import RelatedPost from "../components/RelatedPost"
+import RelatedPost from "../components/RelatedPost";
+
 async function fetchVideoData(id) {
   const url = `https://www.eporner.com/api/v2/video/id/?id=${id}&thumbsize=medium&format=json`;
 
   try {
     const res = await fetch(url);
     if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
-    
+
     return await res.json();
   } catch (error) {
     console.error("Error fetching video data:", error);
@@ -15,8 +16,23 @@ async function fetchVideoData(id) {
   }
 }
 
+// Function to generate metadata dynamically
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { slug } = resolvedParams;
+  const id = slug.split("-")[0];
+
+  const data = await fetchVideoData(id);
+
+  return {
+    title: data?.title || "Video Not Found",
+    description: data?.title || "Watch high-quality videos.",
+    keywords: data?.keywords || data?.title
+  };
+}
+
 export default async function Video({ params }) {
-  const resolvedParams = await params; 
+  const resolvedParams = await params;
   const { slug } = resolvedParams;
   const id = slug.split("-")[0];
 
@@ -36,7 +52,7 @@ export default async function Video({ params }) {
         ) : (
           <p>Video not available.</p>
         )}
-        
+
         <RelatedPost />
       </div>
 

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://bangfab.vercel.app/sitemap.xml

@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-const Adcode2 = () => {
+const Adcode3 = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       if (typeof window.atAsyncOptions !== 'object') {
@@ -10,10 +10,10 @@ const Adcode2 = () => {
       }
 
       window.atAsyncOptions.push({
-        key: 'fa6b975757ba6c2b012b41d82b72ed9a',
+        key: '8b82e0c43879d0dafd34f34e20972d0d',
         format: 'js',
         async: true,
-        container: 'atContainer-fa6b975757ba6c2b012b41d82b72ed9a',
+        container: 'atContainer-8b82e0c43879d0dafd34f34e20972d0d',
         params: {},
       });
 
@@ -23,14 +23,14 @@ const Adcode2 = () => {
       script.src =
         'http' +
         (location.protocol === 'https:' ? 's' : '') +
-        '://stoolsymphony.com/fa6b975757ba6c2b012b41d82b72ed9a/invoke.js';
+        '://stoolsymphony.com/8b82e0c43879d0dafd34f34e20972d0d/invoke.js';
       document.head.appendChild(script);
     }
   }, []);
 
   return (
-    <div id="atContainer-fa6b975757ba6c2b012b41d82b72ed9a" />
+    <div id="atContainer-8b82e0c43879d0dafd34f34e20972d0d" />
   );
 };
 
-export default Adcode2;
+export default Adcode3;

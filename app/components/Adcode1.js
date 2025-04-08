@@ -1,34 +1,34 @@
-"use client";
-import { useEffect } from "react";
+// components/AdUnit.js
 
-export default function Adcode1() {
+"use client"
+import { useEffect } from 'react';
+
+const Adcode1 = () => {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "//stoolsymphony.com/f0949db29a5fdfc99c159a36fcbba94e/invoke.js";
-    script.async = true;
-    document.body.appendChild(script);
+    if (typeof window !== 'undefined') {
+      if (typeof window.atAsyncOptions !== 'object') {
+        window.atAsyncOptions = [];
+      }
 
-    return () => {
-      document.body.removeChild(script);
-    };
+      window.atAsyncOptions.push({
+        key: 'f0949db29a5fdfc99c159a36fcbba94e',
+        format: 'js',
+        async: true,
+        container: 'atContainer-f0949db29a5fdfc99c159a36fcbba94e',
+        params: {}
+      });
+
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = `http${location.protocol === 'https:' ? 's' : ''}://stoolsymphony.com/f0949db29a5fdfc99c159a36fcbba94e/invoke.js`;
+      document.head.appendChild(script);
+    }
   }, []);
 
   return (
-    <div>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            atOptions = {
-              'key' : 'f0949db29a5fdfc99c159a36fcbba94e',
-              'format' : 'iframe',
-              'height' : 50,
-              'width' : 320,
-              'params' : {}
-            };
-          `,
-        }}
-      />
-      <div id="ad-container"></div>
-    </div>
+    <div id="atContainer-f0949db29a5fdfc99c159a36fcbba94e" />
   );
-}
+};
+
+export default Adcode1;

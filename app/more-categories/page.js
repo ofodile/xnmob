@@ -5,7 +5,6 @@ export default function moreCategories() {
     <>
     <h3 className="more-heading">More Categories</h3>
     <div className="more-container">
-    
       <a href="/teen" className="link">Teen</a>
       <a href="/blowjob" className="link">Blowjob</a>
       <a href="/lesbian" className="link">Lesbian</a>
@@ -19,7 +18,7 @@ export default function moreCategories() {
       <a href="/indian" className="link">Indian</a>
       <a href="/bmw" className="link">BMW</a>
       <a href="/public" className="link">Public</a>
-      <a href="/fat" className="link">fay</a>
+      <a href="/fat" className="link">fat</a>
       <a href="/cumshot" className="link">Cumshot</a>
       <a href="/fingering" className="link">Fingering</a>
       <a href="/cowgirl" className="link">Cowgirl</a>
@@ -30,7 +29,7 @@ export default function moreCategories() {
       <a href="/homemade" className="link">Homemade</a>
       <a href="/yoga" className="link">Yoga</a>
       <a href="/squirt" className="link">Squirt</a>
-      <a href="/readhead" className="link">Redhead</a>
+      <a href="/redhead" className="link">Redhead</a>
       <a href="/school" className="link">School</a>
       <a href="/scissoring" className="link">Scissoring</a>
     </div>

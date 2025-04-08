@@ -7,10 +7,30 @@
     gap: 10px;
   }
 
+  .video-ad{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .video-ad-1{
+    display: none;
+  }
+  .section-two {
+    text-align: center;
+  }
+  .video-ad-3,
+  .video-ad-4 {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+
+
 .video-title{
     font-size: 20px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
     color: black;
   }
 
@@ -43,6 +63,13 @@ iframe{
 
     iframe{
         height: 240px;
+    }
+    .video-ad-1{
+      display: block;
+    }
+
+    .video-ad-2{
+      display: none;
     }
 
   }

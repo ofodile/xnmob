@@ -1,5 +1,7 @@
 import Link from "next/link";
 import "../css/category.css";
+import Adcode1 from '../components/Adcode1'
+import Adcode2 from "../components/Adcode2";
 
 export default async function Teen({ searchParams }) {
   const url =
@@ -39,6 +41,15 @@ try {
 
   return (
     <>
+      <div className="home-ad">
+        <div className="home-ad-1">
+          <Adcode1 />
+        </div>
+        <div className="home-ad-2">
+          <Adcode2 />
+        </div>
+      </div>
+      <h3 className="category-h3">Teen Category</h3>
       {paginatedVideos.length > 0 ? (
         <div className="container">
           {paginatedVideos.map((video) => (
@@ -62,8 +73,6 @@ try {
               ) : (
                 <h2 className="title">{video.title}</h2>
               )}
-
-              <p className="tag">{video.keywords.split(",")[2]}</p>
             </a>
           ))}
 
@@ -71,7 +80,7 @@ try {
           <div className="pagination">
             {/* Previous Button */}
             {currentPage > 1 && (
-              <a href={`/?page=${currentPage - 1}`} className="pagination-link">
+              <a href={`/teen/?page=${currentPage - 1}`} className="pagination-link">
                 Previous
               </a>
             )}
@@ -81,7 +90,7 @@ try {
 
             {/* Next Button */}
             {currentPage < totalPages && (
-              <a href={`/?page=${currentPage + 1}`} className="pagination-link">
+              <a href={`/teen/?page=${currentPage + 1}`} className="pagination-link">
                 Next
               </a>
             )}

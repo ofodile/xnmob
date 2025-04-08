@@ -1,11 +1,11 @@
 import Link from "next/link";
-import "./css/category.css";
-import Adcode1 from './components/Adcode1'
-import Adcode2 from "./components/Adcode2";
+import "../css/category.css";
+import Adcode1 from '../components/Adcode1'
+import Adcode2 from "../components/Adcode2";
 
-export default async function Home({ searchParams }) {
+export default async function Handjob({ searchParams }) {
   const url =
-    "https://www.eporner.com/api/v2/video/search/?query=All&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json";
+    "https://www.eporner.com/api/v2/video/search/?query=handjob&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json";
 
   let videos = [];
   
@@ -49,6 +49,7 @@ try {
           <Adcode2 />
         </div>
       </div>
+      <h3 className="category-h3">Handjob Category</h3>
       {paginatedVideos.length > 0 ? (
         <div className="container">
           {paginatedVideos.map((video) => (
@@ -72,8 +73,6 @@ try {
               ) : (
                 <h2 className="title">{video.title}</h2>
               )}
-
-              <p className="tag">{video.keywords.split(",")[2]}</p>
             </a>
           ))}
 
@@ -81,7 +80,7 @@ try {
           <div className="pagination">
             {/* Previous Button */}
             {currentPage > 1 && (
-              <a href={`/?page=${currentPage - 1}`} className="pagination-link">
+              <a href={`/handjob/?page=${currentPage - 1}`} className="pagination-link">
                 Previous
               </a>
             )}
@@ -91,7 +90,7 @@ try {
 
             {/* Next Button */}
             {currentPage < totalPages && (
-              <a href={`/?page=${currentPage + 1}`} className="pagination-link">
+              <a href={`/handjob/?page=${currentPage + 1}`} className="pagination-link">
                 Next
               </a>
             )}

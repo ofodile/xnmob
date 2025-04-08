@@ -75,7 +75,7 @@ try {
           <div className="pagination">
             {/* Previous Button */}
             {currentPage > 1 && (
-              <a href={`/?page=${currentPage - 1}`} className="pagination-link">
+              <a href={`/search/?page=${currentPage - 1}`} className="pagination-link">
                 Previous
               </a>
             )}

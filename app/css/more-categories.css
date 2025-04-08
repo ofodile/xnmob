@@ -1,21 +1,22 @@
-
 .more-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: inline;
   margin: 10px;
 }
 
 .more-heading{
   text-align: center;
   margin: 10px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .link{
-  background: #ff4d4d;
   padding: 5px;
   font-weight: bold;
   border-radius: 5px;
-  color: white;
+  color:#ff4d4d;
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
 }
